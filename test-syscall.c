@@ -6,7 +6,7 @@ int main()
 {  
     printf("Invoking 'listProcessInfo' system call");
 
-    long int ret_status = syscall(385); // 385 is the syscall number
+    long int ret_status = syscall(1); // 385 is the syscall number
 
     if(ret_status == 0) 
          printf("System call 'listProcessInfo' executed correctly. Use dmesg to check processInfo\n");
